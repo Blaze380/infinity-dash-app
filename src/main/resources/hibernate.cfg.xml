@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configurações de conexão com o SQLite -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:/caminho/para/seu/banco/de/dados.db</property>
+        <!-- Outras propriedades de conexão, como usuário e senha (opcional) -->
+        
+        <!-- Dialeto do Hibernate para SQLite -->
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+        
+        <!-- Atualizar o banco de dados automaticamente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- Mapeamento das suas entidades -->
+        <mapping class="com.infinity.database.models.User"/>
+        
+        <!-- Outras configurações do Hibernate -->
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "21.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 390, 230 )
+			"$locationPolicy": 1
+			"foreground": new java.awt.Color( 15, 135, 191, 255 )
+			"title": "Infinite Dash"
+			"alwaysOnTop": true
+			"resizable": false
+			"type": enum java.awt.Window$Type POPUP
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "contentPanel"
+					"opaque": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"foreground": new java.awt.Color( 15, 135, 191, 255 )
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					"opaque": false
+					"background": new java.awt.Color( 15, 135, 191, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						"background": new java.awt.Color( 15, 135, 191, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": new java.awt.Font( "Segoe UI", 1, 16 )
+						"preferredSize": new java.awt.Dimension( 100, 22 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "okButtonMouseClicked", false ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 360, 150 )
+			"size": new java.awt.Dimension( 390, 230 )
+		} )
+	}
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <entry key="sourcefolders1" value="../../../../.." />
+  <entry key="sourcefolders1" value="." />
   <node name="javacodegenerator">
     <entry key="_generalSettingsEnabled" value="true" />
     <entry key="sourcecompatibility" value="17" />

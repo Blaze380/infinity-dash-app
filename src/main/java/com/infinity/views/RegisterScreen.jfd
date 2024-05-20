@@ -1,0 +1,276 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "21.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"visible": true
+			"resizable": false
+			"preferredSize": new java.awt.Dimension( 400, 550 )
+			"$locationPolicy": 1
+			"foreground": new java.awt.Color( 15, 135, 191, 255 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/images/title_logo_blue.png" )
+			"title": "Infinite dash"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "loginScreen"
+				"preferredSize": new java.awt.Dimension( 400, 550 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 3
+				} ) {
+					name: "container"
+					"opaque": false
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 3
+					} ) {
+						name: "logoContainer"
+						"opaque": false
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+							"vgap": 0
+						} ) {
+							name: "logoImg"
+							"opaque": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label1"
+								"text": " "
+								"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/logo_blue.png" )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "logoText"
+							"opaque": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": "Criar Conta"
+								"foreground": new java.awt.Color( 15, 135, 191, 255 )
+								"font": new java.awt.Font( "Segoe UI", 1, 20 )
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 3
+					} ) {
+						name: "credentialsContainer"
+						"opaque": false
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, left:0:1.0"
+							"$rowSpecs": "0, 0, 0, 0, 0"
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "data"
+							"opaque": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "        "
+								"font": &Font0 new java.awt.Font( "Segoe UI", 1, 16 )
+								"foreground": &Color0 new java.awt.Color( 15, 135, 191, 255 )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "        "
+								"font": #Font0
+								"foreground": #Color0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridx": 1
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "nameContainer"
+								"opaque": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label5"
+									"text": "Nome:"
+									"font": #Font0
+									"foreground": #Color0
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "name"
+									"preferredSize": new java.awt.Dimension( 80, 26 )
+									"border": &MatteBorder0 new javax.swing.border.MatteBorder( 0, 0, 3, 0, new java.awt.Color( 15, 135, 191, 255 ) )
+									"background": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+									"selectionColor": &Color2 new java.awt.Color( 15, 135, 191, 255 )
+									"selectedTextColor": &Color3 new java.awt.Color( 255, 255, 255, 255 )
+									"foreground": &Color4 new java.awt.Color( 15, 135, 191, 255 )
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridx": 2
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "phoneContainer"
+								"opaque": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label10"
+									"text": "Celular:"
+									"font": #Font0
+									"foreground": #Color0
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "phoneNumber"
+									"preferredSize": new java.awt.Dimension( 100, 26 )
+									"border": #MatteBorder0
+									"background": #Color1
+									"selectionColor": #Color2
+									"selectedTextColor": #Color3
+									"foreground": #Color4
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridx": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "        "
+								"font": #Font0
+								"foreground": #Color0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 2
+								"gridx": 1
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "emailContainer"
+								"opaque": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label11"
+									"text": "Email:"
+									"font": #Font0
+									"foreground": #Color0
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "email"
+									"preferredSize": new java.awt.Dimension( 200, 26 )
+									"border": #MatteBorder0
+									"background": #Color1
+									"selectionColor": #Color2
+									"selectedTextColor": #Color3
+									"foreground": #Color4
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 2
+								"gridx": 2
+								"gridwidth": 2
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "passwordContainer"
+								"opaque": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label12"
+									"text": "Senha:"
+									"font": #Font0
+									"foreground": #Color0
+								} )
+								add( new FormComponent( "javax.swing.JPasswordField" ) {
+									name: "password"
+									"foreground": &Color5 new java.awt.Color( 15, 135, 191, 255 )
+									"border": &MatteBorder1 new javax.swing.border.MatteBorder( 0, 0, 3, 0, new java.awt.Color( 15, 135, 191, 255 ) )
+									"background": &Color6 new java.awt.Color( 255, 255, 255, 255 )
+									"selectionColor": &Color7 new java.awt.Color( 15, 135, 191, 255 )
+									"selectedTextColor": &Color8 new java.awt.Color( 255, 255, 255, 255 )
+									"preferredSize": &Dimension0 new java.awt.Dimension( 80, 26 )
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 3
+								"gridx": 2
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+								"alignment": 0
+							} ) {
+								name: "confirmPasswordContainer"
+								"opaque": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label13"
+									"text": "ConfirmSenha:"
+									"font": #Font0
+									"foreground": #Color0
+								} )
+								add( new FormComponent( "javax.swing.JPasswordField" ) {
+									name: "confirmPassword"
+									"foreground": #Color5
+									"border": #MatteBorder1
+									"background": #Color6
+									"selectionColor": #Color7
+									"selectedTextColor": #Color8
+									"preferredSize": #Dimension0
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 3
+								"gridx": 3
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "submitContainer"
+							"opaque": false
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "createAccount"
+								"text": "Criar Conta"
+								"background": new java.awt.Color( 15, 135, 191, 255 )
+								"foreground": new java.awt.Color( 255, 255, 255, 255 )
+								"preferredSize": new java.awt.Dimension( 130, 35 )
+								"font": new java.awt.Font( "Segoe UI", 1, 16 )
+								"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+								addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "createAccountMouseClicked", false ) )
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+						"$rowSpecs": "0, 0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "createAccountContainer"
+						"opaque": false
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "                                "
+							"font": #Font0
+							"foreground": #Color0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 5
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "Tem conta?"
+							"font": new java.awt.Font( "Segoe UI", 0, 14 )
+							"foreground": new java.awt.Color( 0, 0, 0, 255 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridwidth": 3
+							"gridx": 8
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "login"
+							"text": "Entrar"
+							"background": new java.awt.Color( 255, 255, 255, 255 )
+							"foreground": new java.awt.Color( 15, 135, 191, 255 )
+							"preferredSize": new java.awt.Dimension( 50, 35 )
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loginMouseClicked", false ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 11
+							"gridy": 1
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "loginScreen"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 398
+				"height": 524
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 235, 25 )
+			"size": new java.awt.Dimension( 400, 555 )
+		} )
+	}
+}

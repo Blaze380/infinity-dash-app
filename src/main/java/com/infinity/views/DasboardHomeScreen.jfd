@@ -1,0 +1,364 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "21.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 3
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/images/title_logo_blue.png" )
+			"title": "Infinite Dash"
+			"font": new java.awt.Font( "Dialog", 1, 12 )
+			"resizable": false
+			"preferredSize": new java.awt.Dimension( 950, 620 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 3
+			} ) {
+				name: "container"
+				"preferredSize": new java.awt.Dimension( 950, 620 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 2
+				} ) {
+					name: "headerContainer"
+					"background": new java.awt.Color( 15, 135, 191, 255 )
+					"opaque": false
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+						name: "logoContainer"
+						"opaque": false
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/header_logo.png" )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+						name: "hSpacer"
+						"preferredSize": new java.awt.Dimension( 500, 10 )
+						"opaque": false
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+						name: "userStatusContainer"
+						"opaque": false
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/user_placeholder.png" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "userName"
+							"text": "Blaze"
+							"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						} )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator4"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 3
+				} ) {
+					name: "bodyContainer"
+					"opaque": false
+					"preferredSize": new java.awt.Dimension( 950, 0 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+						name: "welcomeContainer"
+						"opaque": false
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "SEJA BEM VINDO AO INFINITE DASH "
+							"foreground": &Color0 new java.awt.Color( 15, 135, 191, 255 )
+							"font": new java.awt.Font( "Segoe UI", 1, 36 )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 3
+					} ) {
+						name: "dasboardHomeContainer"
+						"opaque": false
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+							"alignment": 0
+							"hgap": 50
+						} ) {
+							name: "statisticsContainer"
+							"opaque": false
+							"preferredSize": new java.awt.Dimension( 197, 10 )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "Estatística"
+								"foreground": #Color0
+								"font": new java.awt.Font( "Segoe UI", 1, 20 )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "dataResumeContainer"
+							"opaque": false
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 3
+							} ) {
+								name: "totalProductsContainer"
+								"background": new java.awt.Color( 239, 236, 253, 255 )
+								"preferredSize": &Dimension0 new java.awt.Dimension( 150, 90 )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel2"
+									"opaque": false
+									"preferredSize": &Dimension1 new java.awt.Dimension( 111, 25 )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label4"
+										"text": "Total Produtos"
+										"foreground": &Color1 new java.awt.Color( 0, 0, 0, 255 )
+										"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+									} )
+								} )
+								add( new FormComponent( "javax.swing.JSeparator" ) {
+									name: "separator1"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel1"
+									"opaque": false
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "totalProducts"
+										"text": "50"
+										"foreground": &Color2 new java.awt.Color( 0, 0, 0, 255 )
+										"font": &Font1 new java.awt.Font( "Segoe UI", 1, 16 )
+										"horizontalAlignment": 0
+									} )
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "hSpacer2"
+								"preferredSize": &Dimension2 new java.awt.Dimension( 100, 0 )
+								"opaque": false
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 3
+							} ) {
+								name: "totalCategoriesContainer"
+								"background": new java.awt.Color( 248, 237, 235, 255 )
+								"preferredSize": #Dimension0
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel3"
+									"opaque": false
+									"preferredSize": #Dimension1
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label5"
+										"text": "Total Categorias"
+										"foreground": #Color1
+										"font": #Font0
+									} )
+								} )
+								add( new FormComponent( "javax.swing.JSeparator" ) {
+									name: "separator2"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel4"
+									"opaque": false
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "totalCategories"
+										"text": "6"
+										"foreground": #Color2
+										"font": #Font1
+										"horizontalAlignment": 0
+									} )
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "hSpacer3"
+								"preferredSize": #Dimension2
+								"opaque": false
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 3
+							} ) {
+								name: "totalUsersContainer"
+								"background": new java.awt.Color( 232, 249, 255, 255 )
+								"preferredSize": #Dimension0
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel5"
+									"opaque": false
+									"preferredSize": #Dimension1
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label6"
+										"text": "Total Usuários"
+										"foreground": #Color1
+										"font": #Font0
+									} )
+								} )
+								add( new FormComponent( "javax.swing.JSeparator" ) {
+									name: "separator3"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+									name: "panel6"
+									"opaque": false
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "totalUsers"
+										"text": "2"
+										"foreground": #Color2
+										"font": #Font1
+										"horizontalAlignment": 0
+									} )
+								} )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 2
+						} ) {
+							name: "tablesContainer"
+							"opaque": false
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "hSpacer5"
+								"preferredSize": &Dimension3 new java.awt.Dimension( 10, 0 )
+								"opaque": false
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 3
+							} ) {
+								name: "productsTableContainer"
+								"preferredSize": new java.awt.Dimension( 800, 431 )
+								add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+									name: "scrollPane1"
+									addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scrollPane1MouseClicked", false ) )
+									add( new FormComponent( "javax.swing.JTable" ) {
+										name: "productTable"
+										"autoCreateRowSorter": true
+										"showHorizontalLines": true
+										"selectionBackground": new java.awt.Color( 15, 135, 191, 255 )
+										"selectionForeground": new java.awt.Color( 255, 255, 255, 255 )
+										"gridColor": new java.awt.Color( 102, 102, 102, 255 )
+										"selectionMode": 0
+										"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+											add( new java.util.Vector {
+												add( "[ ]" )
+												add( 1 )
+												add( "Supa supa" )
+												add( "Nike" )
+												add( 10 )
+												add( "250 MZN" )
+												add( "Sapatilhas" )
+											} )
+											add( new java.util.Vector {
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+												add( "blaze" )
+												add( null )
+											} )
+											add( new java.util.Vector {
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+												add( null )
+											} )
+										}, new java.util.Vector {
+											add( "Imagem" )
+											add( "id" )
+											add( "Nome" )
+											add( "Marca" )
+											add( "Quantidade" )
+											add( "Preço" )
+											add( "Categoria" )
+										}, new java.util.Vector {
+											add( class java.lang.Object )
+											add( class java.lang.Integer )
+											add( class java.lang.String )
+											add( class java.lang.String )
+											add( class java.lang.Integer )
+											add( class java.lang.String )
+											add( class java.lang.String )
+										}, new java.util.Vector {
+											add( false )
+											add( false )
+											add( false )
+											add( false )
+											add( false )
+											add( false )
+											add( false )
+										}, new java.util.Vector {
+											add( new com.jformdesigner.model.SwingTableColumn( null, 70, 70, 70, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 50, 50, 50, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 200, 200, 200, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 100, 100, 100, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 70, 70, 70, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 100, 100, 100, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 130, 130, 130, true ) )
+										} )
+										"background": new java.awt.Color( 255, 255, 255, 255 )
+										"foreground": new java.awt.Color( 0, 0, 0, 255 )
+										"font": new java.awt.Font( "Segoe UI", 0, 14 )
+										addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "productTableMouseClicked", true ) )
+									} )
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "hSpacer4"
+								"preferredSize": new java.awt.Dimension( 80, 0 )
+								"opaque": false
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+								"axis": 3
+							} ) {
+								name: "categoriesTableContainer"
+								"preferredSize": new java.awt.Dimension( 200, 431 )
+								add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+									name: "scrollPane2"
+									add( new FormComponent( "javax.swing.JTable" ) {
+										name: "categoryTable"
+										"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+											add( new java.util.Vector {
+												add( 2 )
+												add( "Camisetas" )
+											} )
+											add( new java.util.Vector {
+												add( 1 )
+												add( "Sapatilhas" )
+											} )
+											add( new java.util.Vector {
+												add( null )
+												add( null )
+											} )
+										}, new java.util.Vector {
+											add( "Id" )
+											add( "Name" )
+										}, new java.util.Vector {
+											add( class java.lang.Integer )
+											add( class java.lang.String )
+										}, new java.util.Vector {
+											add( false )
+											add( false )
+										}, new java.util.Vector {
+											add( new com.jformdesigner.model.SwingTableColumn( null, 50, 50, 50, true ) )
+											add( new com.jformdesigner.model.SwingTableColumn( null, 120, 120, 120, true ) )
+										} )
+										"selectionMode": 0
+										"autoCreateRowSorter": true
+										"preferredSize": new java.awt.Dimension( 100, 60 )
+										"preferredScrollableViewportSize": new java.awt.Dimension( 290, 400 )
+										"background": new java.awt.Color( 255, 255, 255, 255 )
+										"foreground": new java.awt.Color( 0, 0, 0, 255 )
+										"font": new java.awt.Font( "Segoe UI", 0, 14 )
+										"showHorizontalLines": true
+										"selectionBackground": new java.awt.Color( 15, 135, 191, 255 )
+										"selectionForeground": new java.awt.Color( 255, 255, 255, 255 )
+										addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "categoryTableMouseClicked", true ) )
+									} )
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+								name: "hSpacer6"
+								"preferredSize": #Dimension3
+								"opaque": false
+							} )
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 75, 30 )
+			"size": new java.awt.Dimension( 950, 620 )
+		} )
+	}
+}

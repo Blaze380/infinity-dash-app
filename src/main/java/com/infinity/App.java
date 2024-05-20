@@ -1,8 +1,16 @@
 package com.infinity;
 
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JWindow;
+import com.infinity.views.SplashScreen;
+
+import java.sql.SQLException;
+
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+import com.infinity.database.Database;
+import com.infinity.views.LoginScreen;
 
 /**
  * Hello worlda!
@@ -10,22 +18,28 @@ import javax.swing.JWindow;
  */
 public class App {
     public static void main(String[] args) {
-        final Splash splash = new Splash("C:\\Users\\BLAZEH\\Pictures\\PicS From me\\IMG-20221114-WA0047.jpg");
-        splash.setVisible(true);
+        initDatabase();
+        var splash = new SplashScreen(null);
+        animate(3000);
+        splash.dispose();
+        new LoginScreen();
+    }
+
+    static void initDatabase() {
         try {
-            Thread.sleep(20000);
+            UIManager.setLookAndFeel(new FlatLightLaf());
+            Database.createTables(Database.getQuery("resources/database/application.db").createStatement());
+        } catch (UnsupportedLookAndFeelException | SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    public static void animate(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
         } catch (Exception e) {
         }
-        splash.dispose();
-    }
-}
 
-class Splash extends JWindow {
-    Splash(String imgSrc) {
-        JLabel label = new JLabel(new ImageIcon(imgSrc));
-        getContentPane().add(label);
-        pack();
-        setLocationRelativeTo(null);
-        setSize(200, 200);
     }
 }
